@@ -1,0 +1,346 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 1000px;
+    background: rgb(223, 219, 219);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("backgroud.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn_div{
+    width: 80%;
+    min-width: 320px;
+    height: 400px;
+    background: rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4{
+    color: white;
+    background-color: rgb(66, 66, 66);
+    position: relative;
+    z-index: 1000;
+    top: 10px;
+    left: -60px;
+    text-align: center;
+}
+
+.theam{
+
+    width: 90%;
+    height: 25%;
+    border-radius: 12px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-bottom: 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theam button{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    border-radius: none;
+}
+
+#m1{
+    transform:scale(1.3,1.3);
+    background: url(1.png);
+    background-size:cover;
+}
+
+#m2{
+    background: url(2.png);
+    background-size:cover;
+}
+
+#m3{
+    background: url(3.png);
+    background-size:cover;
+}
+
+#m4{
+    background: url(4.png);
+    background-size:cover;
+}
+
+.strap_color{
+
+    width: 90%;
+    height: 25%;
+    border-radius: 12px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-bottom: 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.strap_color button{
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    border: none;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#b1{
+    transform: scale(1.3,1.3);
+    border: 2px solid white;
+}
+
+.clock_face{
+
+    width: 90%;
+    height: 25%;
+    border-radius: 12px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-bottom: 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock_face button{
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    border: none;
+    border-radius: 50%;
+}
+
+#c1{
+    transform:scale(1.3,1.3);
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.clock_div{
+    width: 80%;
+    min-width: 320px;
+    height: 700px;
+    background: rgba(43, 43, 43, 0.425);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 15px 0 15px 0;
+}
+
+.strap{
+    width: 180px;
+    height: 88%;
+    position: absolute;
+    z-index: 1;
+    background-color: #ff808b;
+    border-radius: 25px;
+    border: 2px solid rgb(71, 70, 70);
+}
+
+.center_main{
+    width: 340px;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    padding-left: 19px;
+}
+
+.center_div{
+    width: 282px;
+    height: 330px; 
+    background-color: #4b4646;
+    border-radius: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.black_div{
+    width: 260px;
+    height: calc(100% - 20px);
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background: url(m1.png);
+    background-size:cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+/*Analog Clock*/
+
+.anlgClock{
+    width: 230px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#anlgClock_id{
+    background: url(clock1.png);
+    background-size:cover;
+}
+
+.anlgClock::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.anlgClock .hour,
+.anlgClock .min,
+.anlgClock .sec
+{
+    position: absolute;
+}
+
+.anlgClock .hour, .hr{
+    width: 90px;
+    height: 90px;
+}
+
+.anlgClock .min, .mn{
+    width: 130px;
+    height: 130px;
+}
+
+.anlgClock .sec, .sc{
+    width: 170px;
+    height: 170px;
+}
+
+.hr, .mn, .sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr:before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 50px;
+    background: #c9002b;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.mn:before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 70px;
+    background: #ff0000;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc:before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 90px;
+    background: #7a7a7a;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
+
+#ang_btn{
+    border: none;
+}
+
+#dgt_btn{
+    border: none;
+}
+
+@media only screen and (min-width:500px) {
+    /*For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+  .main{
+    flex-direction: column;
+   }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For desktop*/
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  .main{
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    flex-direction: row;
+   }
+
+   .btn_div{
+    width: 30%;
+    height: 90%;
+    min-height: 620px;
+   }
+
+   .clock_div{
+    width: 65%;
+    height: 90%;
+    min-height: 620px;
+    margin: 0;
+   }
+
+}
